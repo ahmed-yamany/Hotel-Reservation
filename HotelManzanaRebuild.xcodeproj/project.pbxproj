@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		739B94E528969149003487A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B94E428969149003487A2 /* AppDelegate.swift */; };
 		739B94E728969149003487A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B94E628969149003487A2 /* SceneDelegate.swift */; };
-		739B94E928969149003487A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B94E828969149003487A2 /* ViewController.swift */; };
 		739B94EC28969149003487A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739B94EA28969149003487A2 /* Main.storyboard */; };
 		739B94EE2896914A003487A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739B94ED2896914A003487A2 /* Assets.xcassets */; };
 		739B94F12896914A003487A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739B94EF2896914A003487A2 /* LaunchScreen.storyboard */; };
+		739B94FE28969D0E003487A2 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B94FD28969D0E003487A2 /* Registration.swift */; };
+		739B95002896A579003487A2 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B94FF2896A579003487A2 /* RegistrationTableViewController.swift */; };
+		739B95022896A625003487A2 /* AddGuistRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B95012896A625003487A2 /* AddGuistRegistrationTableViewController.swift */; };
+		739B95042896A6B9003487A2 /* RoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739B95032896A6B9003487A2 /* RoomTypeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		739B94E128969149003487A2 /* HotelManzanaRebuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelManzanaRebuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		739B94E428969149003487A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		739B94E628969149003487A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		739B94E828969149003487A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		739B94EB28969149003487A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		739B94ED2896914A003487A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		739B94F02896914A003487A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		739B94F22896914A003487A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739B94FD28969D0E003487A2 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		739B94FF2896A579003487A2 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
+		739B95012896A625003487A2 /* AddGuistRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGuistRegistrationTableViewController.swift; sourceTree = "<group>"; };
+		739B95032896A6B9003487A2 /* RoomTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTypeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		739B94E328969149003487A2 /* HotelManzanaRebuild */ = {
 			isa = PBXGroup;
 			children = (
-				739B94E428969149003487A2 /* AppDelegate.swift */,
-				739B94E628969149003487A2 /* SceneDelegate.swift */,
-				739B94E828969149003487A2 /* ViewController.swift */,
-				739B94EA28969149003487A2 /* Main.storyboard */,
+				739B94FC289691E1003487A2 /* Delegates */,
+				739B94FB28969193003487A2 /* Controller */,
+				739B94FA28969179003487A2 /* View */,
+				739B94F82896915F003487A2 /* Model */,
 				739B94ED2896914A003487A2 /* Assets.xcassets */,
-				739B94EF2896914A003487A2 /* LaunchScreen.storyboard */,
 				739B94F22896914A003487A2 /* Info.plist */,
 			);
 			path = HotelManzanaRebuild;
+			sourceTree = "<group>";
+		};
+		739B94F82896915F003487A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				739B94FD28969D0E003487A2 /* Registration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		739B94FA28969179003487A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				739B94EA28969149003487A2 /* Main.storyboard */,
+				739B94EF2896914A003487A2 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		739B94FB28969193003487A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				739B94FF2896A579003487A2 /* RegistrationTableViewController.swift */,
+				739B95012896A625003487A2 /* AddGuistRegistrationTableViewController.swift */,
+				739B95032896A6B9003487A2 /* RoomTypeTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		739B94FC289691E1003487A2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				739B94E428969149003487A2 /* AppDelegate.swift */,
+				739B94E628969149003487A2 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739B94E928969149003487A2 /* ViewController.swift in Sources */,
 				739B94E528969149003487A2 /* AppDelegate.swift in Sources */,
+				739B94FE28969D0E003487A2 /* Registration.swift in Sources */,
+				739B95002896A579003487A2 /* RegistrationTableViewController.swift in Sources */,
 				739B94E728969149003487A2 /* SceneDelegate.swift in Sources */,
+				739B95042896A6B9003487A2 /* RoomTypeTableViewController.swift in Sources */,
+				739B95022896A625003487A2 /* AddGuistRegistrationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
